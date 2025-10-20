@@ -1,0 +1,67 @@
+[
+  {
+    "model": "store.category",
+    "pk": 1,
+    "fields": {
+      "name": "Electronics"
+    }
+  },
+  {
+    "model": "store.category",
+    "pk": 2,
+    "fields": {
+      "name": "Books"
+    }
+  },
+  {
+    "model": "store.creator",
+    "pk": 1,
+    "fields": {
+      "name": "John Doe",
+      "phone_number": "1234567890123",
+      "country": "USA"
+    }
+  },
+  {
+    "model": "store.creator",
+    "pk": 2,
+    "fields": {
+      "name": "Jane Smith",
+      "phone_number": "9876543210987",
+      "country": "Canada"
+    }
+  },
+  {
+    "model": "store.product",
+    "pk": 1,
+    "fields": {
+      "name": "Laptop",
+      "price": "1200.00",
+      "amount": "10.00",
+      "product_category": 1,
+      "creator": 1
+    }
+  },
+  {
+    "model": "store.product",
+    "pk": 2,
+    "fields": {
+      "name": "Python Programming Book",
+      "price": "45.50",
+      "amount": "25.00",
+      "product_category": 2,
+      "creator": 2
+    }
+  },
+  {
+    "model": "store.product",
+    "pk": 3,
+    "fields": {
+      "name": "Smartphone",
+      "price": "800.00",
+      "amount": "15.00",
+      "product_category": 1,
+      "creator": 1
+    }
+  }
+]
