@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block title %}List creators{% endblock %}
+
+{% block content %}
+<h2>My creators</h2>
+<ul>
+    {% for creator in creators %}
+        <li>
+            <a href="{% url 'store:store-creator' creator.id %}">
+                {{ creator.name }}, phone: {{ creator.phone_number }}, {{ creator.country }}
+            </a>
+        </li>
+    {% empty %}
+        <li>For now not free creators.</li>
+    {% endfor %}
+</ul>
+{% endblock %}

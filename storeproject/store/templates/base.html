@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %}This is my first webpage.{% endblock %}</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="/store/home/">Головна сторінка</a> |
+            <a href="/store/creators/">Виробники</a>
+            <a href="/store/creator/1/">Головний розробник магазину</a>
+        </nav>
+    </header>
+    <hr>
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+    <hr>
+    <footer>
+        <p>© 2025</p>
+    </footer>
+</body>
+</html>
