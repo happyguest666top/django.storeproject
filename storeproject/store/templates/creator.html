@@ -1,10 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>creator</title>
-</head>
-<body>
+{% extends 'base.html' %}
 
-</body>
-</html>
+{% block title %}{{ creator }}{% endblock %}
+
+{% block content %}
+<h2>{{ creator }}</h2>
+<a href="/store/creators/">← Назад до списку</a>
+{% endblock %}
