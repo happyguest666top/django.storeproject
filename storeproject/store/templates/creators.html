@@ -3,11 +3,11 @@
 {% block title %}List creators{% endblock %}
 
 {% block content %}
-<h2>My creators</h2>
+<h2 class="text-success">My creators</h2>
 <ul>
     {% for creator in creators %}
-        <li>
-            <a href="{% url 'store:store-creator' creator.id %}">
+        <li class="text-success">
+            <a class="text-success" href="{% url 'store:store-creator' creator.id %}">
                 {{ creator.name }}, phone: {{ creator.phone_number }}, {{ creator.country }}
             </a>
         </li>

@@ -21,6 +21,12 @@ def creator(request, pk):
     context = {'creator': creators_obj}
     return render(request, 'creator.html', context)
 
+def info_view(request):
+    return render(request, 'info.html')
+
+def videos(request):
+    return render(request, 'videos.html')
+
 def register_view(request):
     if request.method == 'POST':
         form = RegisterForm(request.POST)
